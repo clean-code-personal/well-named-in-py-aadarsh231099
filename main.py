@@ -1,6 +1,7 @@
 from color_pair import *
 from get_pair_number_from_color import *
 from get_color_from_pair_number import *
+from manual import *
 
 def test_number_to_pair(pair_number, expected_major_color, expected_minor_color):
     major_color, minor_color = get_color_from_pair_number(pair_number)
@@ -18,3 +19,5 @@ if __name__ == '__main__':
     test_pair_to_number('Violet', 'Slate', 25)
     test_pair_to_number('Red', 'Orange', 7)
     print('Done :)')
+
+print_color_coding_reference()
